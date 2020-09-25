@@ -107,35 +107,34 @@ public class AuthenticationService {
         return keyPair;
     }
 
-    public static void main(String[] args) {
-        Security.addProvider(new BouncyCastleProvider());
-//        for(int i=0;i<100;i++){
+//    public static void main(String[] args) {
+//        Security.addProvider(new BouncyCastleProvider());
+////        for(int i=0;i<100;i++){
 //            KeyPair keyPair = generateKeyPair();
 //            KeyPair keyPair1 = generateKeyPair();
 //            String sign = sign(keyPair.getPri(), "test data without newline");
 ////            System.out.println(sign);
 //            boolean ret = verify(sign, "test data without newline", keyPair.getPub());
 //            System.out.println("正确结果" + ret);
-////            boolean ret1 = verify(sign, "test data without newline", keyPair1.getPub());
-////            System.out.println("替换秘钥" + ret1);
-////            String sign1 = sign(keyPair.getPri(), "test data withoutnewline");
+//            boolean ret1 = verify(sign, "test data without newline", keyPair1.getPub());
+//            System.out.println("替换秘钥" + ret1);
+//            String sign1 = sign(keyPair.getPri(), "test data withoutnewline");
 //
-////            boolean ret2 = verify(sign1, "test data without newline", keyPair.getPub());
-////            System.out.println("替换签名" + ret2);
+//            boolean ret2 = verify(sign1, "test data without newline", keyPair.getPub());
+//            System.out.println("替换签名" + ret2);
+////
+////        }
 //
-//        }
-
-
-        KeyPair keyPair = generateKeyPair();
-        System.out.println("私钥"+keyPair.getPri());
-        System.out.println("公钥"+keyPair.getPub());
-        String sign = sign(keyPair.getPri(), "test data without newline");
-        System.out.println("数据"+"test data without newline");
-        System.out.println("签名"+sign);
-//        System.out.println("签名!"+"0xc68f32b0e1b3d93911bad4110399a81771752b54c02463e65477533e96aa087b0ca6d34e9a2c614a552dd81235f537f399f86f2cbc6ab5c338cfc16b385d26b1");
-        boolean ret1 = verify(sign, "test data without newline", keyPair.getPub());
-        System.out.println(ret1);
-
-
-    }
+//
+//        KeyPair keyPair = generateKeyPair();
+//        System.out.println("私钥"+keyPair.getPri());
+//        System.out.println("公钥"+keyPair.getPub());
+//        String sign = sign(keyPair.getPri(), "test data without newline");
+//        System.out.println("数据"+"test data without newline");
+//        System.out.println("签名"+sign);
+//        boolean ret1 = verify(sign, "test data without newline", keyPair.getPub());
+//        System.out.println(ret1);
+//
+//
+//    }
 }
